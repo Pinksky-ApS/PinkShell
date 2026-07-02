@@ -1,7 +1,7 @@
 if ($MyInvocation.InvocationName -notin @('.', '')) {
     Write-Host "❌ - Don't save and run this file directly - every cmdlet it loads would disappear the moment the script finishes, because they'd be scoped to the script instead of your session." -ForegroundColor Red
     Write-Host "❌ - Use the one-liner instead, which doesn't have this problem:" -ForegroundColor Red
-    Write-Host '❌ -     irm "https://raw.githubusercontent.com/Pinksky-ApS/PinkShell/refs/heads/main/main.ps1" | iex' -ForegroundColor Red
+    Write-Host '❌ -     irm "https://raw.githubusercontent.com/Pinksky-ApS/PinkShell/refs/heads/master/main.ps1" | iex' -ForegroundColor Red
     return
 }
 

@@ -31,7 +31,7 @@ Nothing to install. Run this in a PowerShell 7+ session whenever you need it - i
 into that session only, checks your environment, and connects to Microsoft Graph:
 
 ```powershell
-irm "https://raw.githubusercontent.com/Pinksky-ApS/PinkShell/refs/heads/main/main.ps1" | iex
+irm "https://raw.githubusercontent.com/Pinksky-ApS/PinkShell/refs/heads/master/main.ps1" | iex
 ```
 
 This **will not** run on Windows PowerShell 5.1. See

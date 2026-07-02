@@ -13,7 +13,7 @@ that session.
 To use it, run the following in a PowerShell 7 session:
 
 ```powershell
-irm "https://raw.githubusercontent.com/Pinksky-ApS/PinkShell/refs/heads/main/main.ps1" | iex
+irm "https://raw.githubusercontent.com/Pinksky-ApS/PinkShell/refs/heads/master/main.ps1" | iex
 ```
 
 ## What happens next
