@@ -7,7 +7,7 @@ if ($MyInvocation.InvocationName -notin @('.', '')) {
 
 $ErrorActionPreference = "Stop"
 $ProductName = "PinkShell"
-$gitRef = "main"
+$gitRef = "master"
 $archiveUrl = "https://github.com/Pinksky-ApS/PinkShell/archive/refs/heads/$gitRef.zip"
 
 $downloadRoot = Join-Path ([System.IO.Path]::GetTempPath()) "PinkShell-$([guid]::NewGuid())"
