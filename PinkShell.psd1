@@ -1,6 +1,6 @@
 @{
     RootModule        = 'PinkShell.psm1'
-    ModuleVersion     = '0.1.0'
+    ModuleVersion     = '0.2.0'
     GUID              = 'b15117d1-ccbb-40f0-b6c3-dd9322f53311'
     Author            = 'Dan Toft (Pinksky)'
     CompanyName       = 'Pinksky ApS'

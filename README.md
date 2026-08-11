@@ -34,6 +34,10 @@ into that session only, checks your environment, and connects to Microsoft Graph
 irm "https://raw.githubusercontent.com/Pinksky-ApS/PinkShell/refs/heads/master/main.ps1" | iex
 ```
 
+Sign-in opens a browser tab, and you authenticate as
+[Pinksky Management Shell](https://pinksky.dk/management-shell) - Pinksky's shared
+management application. The first admin to sign in from a tenant is asked to consent to it.
+
 This **will not** run on Windows PowerShell 5.1. See
 [`docs/Getting_Started.md`](docs/Getting_Started.md) for the full walkthrough.
 

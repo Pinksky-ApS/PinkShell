@@ -5,6 +5,27 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## 0.2.0 - 2026-Aug-11
+
+### Changed
+
+- Sign-in now uses the [Pinksky Management Shell](https://pinksky.dk/management-shell)
+  application instead of `Microsoft Graph Command Line Tools`. This is what allows the
+  Web Account Manager (WAM) broker to be disabled - WAM can't be turned off when using the
+  SDK's default application - so sign-in opens a browser tab with a normal account picker
+  rather than silently reusing the signed-in Windows account.
+- Permissions are no longer requested at sign-in. PinkShell connects with `/.default`, so a
+  tenant that hasn't consented is taken through the full consent flow for the application
+  rather than being granted a partial subset.
+- Every run signs out of any existing Microsoft Graph session and signs in fresh, so moving
+  between tenants no longer silently reuses the previous one. The success message now shows
+  the account and tenant you connected to.
+
+### Added
+
+- If a tenant has consented to only part of the application, PinkShell reports which
+  permissions are missing, opens the admin consent page, and reconnects afterwards.
+
 ## 0.1.0 - 2026-Jul-01
 
 Initial release.
